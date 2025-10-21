@@ -1,0 +1,220 @@
+
+ h1,h2,h3,h4,.logo ,.book-button{
+    font-family: "Great Vibes", cursive;
+}
+ body{
+    font-family: Arial, sans-serif;
+  }
+
+/*--------------------Home Section------------- */
+
+  .navbar-collapse.show {
+    background: dark; 
+    backdrop-filter: blur(10px);
+    transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+
+.navbar-collapse {
+  transition: background 0.3s ease-in-out;
+}
+
+.carousel-item:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  .carousel-item{
+    height: 700px;
+  }
+  @media (max-width: 991.98px) {
+    .carousel-item {
+     height:480px !important; }
+     
+    }
+    .carousel-item:before {
+      content: "";
+      background: rgba(0, 0, 0, 0.8);
+      position: absolute;
+      bottom: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+    }
+ 
+    .header-scrolled {
+      background-color: #343a40;
+      transition: all 1s; 
+    }
+
+/*---------------------- Menu Section ---------------------*/
+.menu-link{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.menu-link:hover{
+  transition: 0.3s;
+  color: #ffc107;
+  font-weight: bolder;
+}
+.menu-link:after{
+  content: "-------------------------------------------------------------";
+  color: gray;
+}
+.menu-img{
+  height: 70px;
+  width: 70px;
+  border-radius: 100%;
+  border: 2px solid #ffc107;
+}
+.price-number{
+  color: #ffc107;
+  margin-left: 6px;
+  font-weight: bold;
+  font-size: 18px;
+}
+ 
+  .book-a-table-section{
+     background-image: url(body-bg.jpg);
+     background-size: cover;
+  }
+
+  /*--------- Contact section--------*/
+  
+  .sec {
+    background-image: url(res.jpg);
+    background-size: cover;
+    padding: 240px 0px;
+  }
+  @media (max-width: 991.98px) {
+    .sec {
+      padding:120px 0px !important;}
+  }
+  .header-scrolled {
+    background-color: #343a40;
+    transition: all 1s;
+  }
+   .about-section{
+     background-image: url(images/body-bg.jpg);
+     background-attachment: fixed;
+     background-size: cover;
+     overflow: hidden;
+   }
+   .icon{
+    padding: 15px;
+    margin: 6px;
+    background-color:#343a40;
+    border-radius: 50%;
+    color: #ffc107;
+    font-size: 20px;
+  }
+
+  .icon:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+    color: white;
+  }
+
+
+  /*----------About Section-------- */
+  
+  .img {
+    transition: all ease-in-out 0.4s;
+    overflow: hidden;
+  }
+  .about {
+    overflow: hidden;
+  }
+  .about:hover img {
+    transform: scale(1.1);
+  }
+
+/* Services Section */
+
+.card:hover{
+     color:white ;
+     background-color:gray;
+     transform: scale(1.09);
+     transition: all 0.5s;
+}
+
+/* Team Section */
+
+.member {
+  text-align: center;
+  position: relative;
+}
+
+.member-info {
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.member-info-content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  transition: bottom 0.4s;
+}
+
+.member-info-content h4 {
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 18px;
+  color:#ffc107;
+}
+
+.member-info-content span {
+  font-style: italic;
+  font-size: 13px;
+  color: white;
+}
+
+.social {
+  position: absolute;
+  left: 0;
+  bottom: -38px;
+  right: 0;
+  height: 48px;
+  transition: bottom ease-in-out 0.4s;
+}
+
+.social a {
+  transition:0.3s;
+  color: #fff;
+  margin: 0 10px;
+}
+
+.social a:hover {
+  color: #ffc107;
+}
+
+.chefs-section .member .social i {
+  font-size: 18px;
+  margin: 0 2px;
+}
+
+.member:hover .member-info {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.8) 20%, rgba(0, 212, 255, 0) 100%);
+  opacity: 1;
+  transition: 0.4s;
+}
+
+.member:hover .member-info-content {
+  bottom: 60px;
+  transition: bottom 0.4s;
+}
+
+.member:hover .social {
+  bottom: 0;
+  transition: bottom ease-in-out 0.4s;
+}
